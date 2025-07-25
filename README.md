@@ -1,4 +1,4 @@
-# hono-helper
+# hono-helper-toolkit
 
 A helper package for building scalable APIs with [Hono](https://hono.dev), [Zod](https://zod.dev), and OpenAPI integration, including useful utilities like rate limiting with Redis support.
 
@@ -19,7 +19,7 @@ A helper package for building scalable APIs with [Hono](https://hono.dev), [Zod]
 Create an OpenAPI documentation and route factory:
 
 ```typescript
-import { OpenAPIHonoFactory } from 'hono-helper';
+import { OpenAPIHonoFactory } from 'hono-helper-toolkit';
 
 const app = OpenAPIHonoFactory({
   title: 'My API',
@@ -40,7 +40,7 @@ app.listen(3000);
 In-memory or Redis-backed rate limiter middleware:
 
 ```typescript
-import { rateLimiter, setRedisClient } from 'hono-helper';
+import { rateLimiter, setRedisClient } from 'hono-helper-toolkit';
 import Redis from 'ioredis';
 
 const redisClient = new Redis();

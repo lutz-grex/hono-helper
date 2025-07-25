@@ -1,5 +1,5 @@
 {
-  "name": "hono-helper",
+  "name": "hono-helper-toolkit",
   "version": "1.0.0",
   "module": "index.ts",
   "type": "module",
@@ -11,6 +11,18 @@
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts --out-dir dist --clean"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lutz-grex/hono-helper-toolkit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lutz-grex/hono-helper-toolkit.git/issues"
+  },
+  "homepage": "https://github.com/lutz-grex/hono-helper-toolkit.git#readme",
+  "description": "",
   "devDependencies": {
     "@types/bun": "latest",
     "@types/node": "^24.1.0",
